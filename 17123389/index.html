@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.6">
+    <link rel="shortcut icon" href="http://plx3sdd5s.bkt.clouddn.com/11pm-static/favicon-11pm128.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../static/css/course.css">
+    <script src="../static/js/jquery-3.3.1.min.js"></script>
+    <title>17123389</title>
+<body>
+    <h1>Guo Junhui's Courses</h1>
+    <!--<p>16122491****Dolinv0412</p>-->
+    <!-- 课表信息来源 -->
+    <div id='orignTable'>
+        <table class="tbllist">
+     
+            <tbody><tr id="showStudent" style="">
+                 <td colspan="20">
+                     <div style="float:left;">
+                         学号：&nbsp;&nbsp;&nbsp;17123389
+                     </div>
+                     <div style="float:left;margin-left:20px;">
+                         姓名：&nbsp;&nbsp;&nbsp;郭俊晖
+                     </div>
+                     <div style="float: left; margin-left: 20px;">
+                         学院：&nbsp;&nbsp;&nbsp;外国语学院
+                     </div>
+                     <div style="float: left; margin-left: 20px;">
+                         校区：&nbsp;&nbsp;&nbsp;本部
+                     </div>
+                     <div style="float:right;" id="showPrint">
+                         <input type="button" value="转至打印页" onclick="ActionToPrint()">
+                     </div>
+                 </td>
+             </tr>
+             
+             <tr>
+                 <td colspan="20" style="font-weight:bolder;color:Blue;">
+                     当前已选课程
+     
+                 </td>
+             </tr>
+             <tr>
+                 <th>
+                     序号
+                 </th>
+                 <th>
+                     课程号
+     
+                 </th>
+                 <th>
+                     课程名
+     
+                 </th>
+                 <th>
+                     教师号
+     
+                 </th>
+                 <th>
+                     教师名
+     
+                 </th>
+                 <th>
+                     学分
+                 </th>
+                 <th>
+                     上课时间
+                 </th>
+                 <th>
+                     上课地点
+                 </th>
+                 <th>
+                     校区
+                 </th>
+                 <th style="color:Blue;">答疑时间</th>
+                 <th style="color:Blue;">答疑地点</th>
+             </tr>
+             
+             <tr>
+                 <td>
+                     A
+                 </td>
+                 <td>
+                     03114158
+                 </td>
+                 <td>
+                     英语A(二外)(3)
+                 </td>
+                 <td>
+                     1000
+                 </td>
+                 <td>
+                     沈力
+                 </td>
+                 <td>
+                     2
+                 </td>
+                 <td>
+                     三9-10
+                 </td>
+                 <td>
+                     A217
+                 </td>
+                 <td>
+                     本部
+                 </td>
+                 <td>一9-10</td>
+                 <td>C405</td>
+             </tr>
+             
+             <tr>
+                 <td>
+                     B
+                 </td>
+                 <td>
+                     03115048
+                 </td>
+                 <td>
+                     英语翻译(2)
+                 </td>
+                 <td>
+                     1001
+                 </td>
+                 <td>
+                     王晓元
+                 </td>
+                 <td>
+                     2
+                 </td>
+                 <td>
+                     三5-6
+                 </td>
+                 <td>
+                     C113
+                 </td>
+                 <td>
+                     本部
+                 </td>
+                 <td>二7-8</td>
+                 <td>C306</td>
+             </tr>
+             
+             <tr>
+                 <td>
+                     C
+                 </td>
+                 <td>
+                     03115186
+                 </td>
+                 <td>
+                     接待与洽谈口译(2)
+                 </td>
+                 <td>
+                     1002
+                 </td>
+                 <td>
+                     孙序
+                 </td>
+                 <td>
+                     2
+                 </td>
+                 <td>
+                     三3-4
+                 </td>
+                 <td>
+                     C601
+                 </td>
+                 <td>
+                     本部
+                 </td>
+                 <td>三9-10</td>
+                 <td>C303</td>
+             </tr>
+             
+             <tr>
+                 <td>
+                     D
+                 </td>
+                 <td>
+                     03115247
+                 </td>
+                 <td>
+                     综合英语(5)
+                 </td>
+                 <td>
+                     1002
+                 </td>
+                 <td>
+                     黄欣
+                 </td>
+                 <td>
+                     4
+                 </td>
+                 <td>
+                     二1-2 四1-2
+                 </td>
+                 <td>
+                     C104
+                 </td>
+                 <td>
+                     本部
+                 </td>
+                 <td>四3-4</td>
+                 <td>C301</td>
+             </tr>
+             
+             <tr>
+                 <td>
+                     E
+                 </td>
+                 <td>
+                     03115255
+                 </td>
+                 <td>
+                     高级英语听力(2)
+                 </td>
+                 <td>
+                     1001
+                 </td>
+                 <td>
+                     王颖
+                 </td>
+                 <td>
+                     2
+                 </td>
+                 <td>
+                     一1-2
+                 </td>
+                 <td>
+                     C607
+                 </td>
+                 <td>
+                     本部
+                 </td>
+                 <td>一7-8</td>
+                 <td>C303</td>
+             </tr>
+             
+             <tr>
+                 <td>
+                     F
+                 </td>
+                 <td>
+                     03115264
+                 </td>
+                 <td>
+                     英美文学史及选读(2)
+                 </td>
+                 <td>
+                     1001
+                 </td>
+                 <td>
+                     苗福光
+                 </td>
+                 <td>
+                     2
+                 </td>
+                 <td>
+                     一3-4
+                 </td>
+                 <td>
+                     C120
+                 </td>
+                 <td>
+                     本部
+                 </td>
+                 <td>一7-8</td>
+                 <td>C205</td>
+             </tr>
+             
+             <tr>
+                 <td>
+                     G
+                 </td>
+                 <td>
+                     03116059
+                 </td>
+                 <td>
+                     英语语言学(2)
+                 </td>
+                 <td>
+                     1001
+                 </td>
+                 <td>
+                     唐青叶
+                 </td>
+                 <td>
+                     2
+                 </td>
+                 <td>
+                     二3-4
+                 </td>
+                 <td>
+                     C116
+                 </td>
+                 <td>
+                     本部
+                 </td>
+                 <td>二5-6</td>
+                 <td>C301</td>
+             </tr>
+             
+             <tr>
+                 <td>
+                     H
+                 </td>
+                 <td>
+                     03116164
+                 </td>
+                 <td>
+                     高级口译A(2)
+                 </td>
+                 <td>
+                     1001
+                 </td>
+                 <td>
+                     朱巧莲
+                 </td>
+                 <td>
+                     2
+                 </td>
+                 <td>
+                     三1-2
+                 </td>
+                 <td>
+                     C602
+                 </td>
+                 <td>
+                     本部
+                 </td>
+                 <td>四3-4</td>
+                 <td>C303</td>
+             </tr>
+             
+             <tr>
+                 <td>
+                     I
+                 </td>
+                 <td>
+                     03116168
+                 </td>
+                 <td>
+                     高级英语写作(2)
+                 </td>
+                 <td>
+                     1003
+                 </td>
+                 <td>
+                     白岸杨
+                 </td>
+                 <td>
+                     2
+                 </td>
+                 <td>
+                     四3-4
+                 </td>
+                 <td>
+                     C104
+                 </td>
+                 <td>
+                     本部
+                 </td>
+                 <td>四7-8</td>
+                 <td>C304</td>
+             </tr>
+             
+             <tr>
+                 <td>
+                     J
+                 </td>
+                 <td>
+                     03126076
+                 </td>
+                 <td>
+                     德语(二外)(5)
+                 </td>
+                 <td>
+                     1000
+                 </td>
+                 <td>
+                     陈丽江
+                 </td>
+                 <td>
+                     4
+                 </td>
+                 <td>
+                     二7-8 四7-8
+                 </td>
+                 <td>
+                     C118
+                 </td>
+                 <td>
+                     本部
+                 </td>
+                 <td>二9-10</td>
+                 <td>C403</td>
+             </tr>
+             
+             <tr>
+                 <td>
+                     K
+                 </td>
+                 <td>
+                     0400JH01
+                 </td>
+                 <td>
+                     生活中的经济学
+                 </td>
+                 <td>
+                     1002
+                 </td>
+                 <td>
+                     沈瑶等
+                 </td>
+                 <td>
+                     4
+                 </td>
+                 <td>
+                     二5-6 四5-6
+                 </td>
+                 <td>
+                     AJ103
+                 </td>
+                 <td>
+                     本部
+                 </td>
+                 <td>三9-10</td>
+                 <td>1号楼经管楼511</td>
+             </tr>
+             
+             <tr>
+                 <td>
+                     L
+                 </td>
+                 <td>
+                     16583109
+                 </td>
+                 <td>
+                     形势与政策
+                 </td>
+                 <td>
+                     1069
+                 </td>
+                 <td>
+                     宋津明
+                 </td>
+                 <td>
+                     0
+                 </td>
+                 <td>
+                     三7-8  (1,6周)
+                 </td>
+                 <td>
+                     DJ108
+                 </td>
+                 <td>
+                     本部
+                 </td>
+                 <td>二9-10</td>
+                 <td>2号楼社科楼206</td>
+             </tr>
+             
+             <tr>
+                 <td colspan="20">
+                     总学分：28（计算学分：28）
+     
+                 </td>
+             </tr>
+         </tbody></table>
+    
+    </div>
+    <!-- 采集提取课表信息 -->
+    <!-- 渲染课表周历头 -->
+    <div id="course_table">
+        <div id='datetime_header'>
+            <a href="javascript:;" title="上一周" class="prev_icon" id="prev_week"></a>
+            <input id="year_selector" type="number" max="3000" min="0" maxlength="4" placeholder='0~3000' required> 年
+            <b id="month_selector"> </b> 月 
+            第 <input id="week_selector" type="number" max="54" min="1" maxlength="2" placeholder="1~54" required> 周
+            
+            <button id = "change" title="切到该周"></button>
+            <button id = "goback" title="跳到本周"></button>
+            
+            <b id="grade"></b>
+            <b id="term"></b> 
+            第 <b id="shu_week"></b> 周 
+            <a href="javascript:;" title="上一周" class="next_icon" id="next_week"></a>
+            
+        </div>
+        
+        <div id="courses_main">
+            
+            <ul id="weeks_ch"></ul>
+            <ul id="weeklyCanlendarView"></ul>
+            <!-- 这里插入课表 -->
+        </div>
+    </div>
+
+    <!-- <a class="js-open-box" href="#">显示课程详情弹窗</a> -->
+
+    <div class="box-login">
+        <p id="courseID" style="margin-top: 1em">courseID</p>
+        <p id="courseName" style="margin-top: 1em">courseName</p>
+        <p id="teacherID" style="margin-top: 1em">teacherID</p>
+        <p id="teacherName" style="margin-top: 1em">teacherName</p>
+        <p id="courseScore" style="margin-top: 1em">courseScore</p>
+        <p id="timeString" style="margin-top: 1em">timeString</p>
+        <p id="classRoom" style="margin-top: 1em">classRoom</p>
+        <p id="courseSchoolArea" style="margin-top: 1em">courseSchoolArea</p>
+        <p id="QuestionWhen" style="margin-top: 1em">QuestionWhen</p>
+        <p id="QuestionWhere" style="margin-top: 1em">QuestionWhere</p>
+    </div>
+
+    <!-- 显示校历 -->
+
+    <div id="xiaoli">
+        <span id="xiaolispan">2019-2020校历</span>
+        <a href="http://vivi98.top/ImgStorage/秋季学期校历19-20.png">秋季</a>
+        <a href="http://vivi98.top/ImgStorage/冬季学期校历19-20.png">冬季</a>
+        <a href="http://vivi98.top/ImgStorage/春季学期校历19-20.png">春季</a>
+        <a href="http://vivi98.top/ImgStorage/夏季学期校历19-20.png">夏季</a>
+    </div>
+
+    <div class="overlay"></div>
+
+    <footer style='margin: 3vh auto'>
+        <!-- <img src="http://plx3sdd5s.bkt.clouddn.com/11pm-static/11pm128.png" alt="11pm128.png"> -->
+        <div id="footerP">
+            <p>feedback : <a id="mail" href='mailto:droliven@163.com'>droliven@163.com</a></p>
+            <p>Source Code : <a id="github" href="https://github.com/Droliven">https://github.com/Droliven</a></p>
+            
+        </div>
+        <!-- <img src="http://plx3sdd5s.bkt.clouddn.com/11pm-static/dog128.png" alt="dog128.png"> -->
+    </footer>
+    <p class="copyright">&copy copyright 2019</p>
+    <p class="copyright">To complete all before 11pm.</p>
+    <!-- js填充DOM -->
+    <!-- 注意：下面这两行脚本，按现在的顺序，则点击日期、课程均会触发自定义的console.log函数，但头部计算年级的文本变为Underfined,
+        但一旦交换顺序，则只有点击下面的课程会触发console.log函数,点击上面的日期，不会触发console.log那个回调函数 -->
+    <script src="../static/js/calendar.js"></script>
+    <script src="../static/js/courseTable.js"></script>
+
+
+</body>
+</html>

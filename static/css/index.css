@@ -1,0 +1,77 @@
+/*<![CDATA[*/
+* {
+    margin:0;
+    padding:0;
+    /* box-sizing: border-box; */
+} /* 重置css */ 
+body {
+    background-color: #fff;
+    color: #000;
+    font-size: 0.9em;
+    font-family: sans-serif,helvetica;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    width: 100vw;
+    margin: auto;
+    padding: 1em;
+    background-color: #294172;
+    color: #fff;
+    font-weight: normal;
+    font-size: 1.75em;
+    border-bottom: 2px solid #000;
+}
+q{
+    width: 100vw;
+    border-bottom: darkgrey;
+    font-size: 1.2em;
+    line-height: 3em;
+    color: chocolate;
+
+}
+article{
+    margin: 5vh auto;
+    display: flex;
+    flex-direction: row;
+
+}
+div #left #right{
+    flex-direction: column;
+}
+#left{
+    margin-right: 5%;
+}
+#right{
+    margin-left: 5%;
+}
+:link {
+    color: #c00;
+}
+:visited {
+    color: #c00;
+}
+a:hover {
+    color: #f50;
+}
+img {
+    border: 2px solid #ccc;
+    padding: 2px;
+    margin: 2px;
+}
+footer{
+    width: 100vw;
+    margin: auto;
+
+}
+a:hover img {
+    border: 2px solid #294172;
+}
+
+/*]]>*/
